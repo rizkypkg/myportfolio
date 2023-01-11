@@ -2,25 +2,30 @@
 <html>
 	<head>
 		<title>My Portfolio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="fontawesome/css/all.css">
 		<link rel="stylesheet" href="fontawesome/css/fontawesome.css">
 	</head>
 	<body>
-		<div class="container">
+		<div class="container" id="home">
 			<!-- Navbar -->
 			<div class="nav">
-				<h3 id="home">M.RIZKY</h3>
-				<ul class="menu1">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-				<ul class="menu2">
-					<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-					<li><a href="https://github.com/rizkypkg/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-					<li><a href="https://wa.me/+6285724817551" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
-				</ul>
+				<div class="nama">
+					<h3>M.RIZKY</h3>
+				</div>
+				<a href="#" class="toggle-btn">
+					<span class="hamburger"></span>
+					<span class="hamburger"></span>
+					<span class="hamburger"></span>
+				</a>
+				<div class="menu">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
 			</div>
 			<!-- Navbar -->
 
@@ -39,21 +44,53 @@
 			<!-- Main -->
 
 			<!-- About -->
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5cdb95" fill-opacity="1" d="M0,192L34.3,186.7C68.6,181,137,171,206,160C274.3,149,343,139,411,160C480,181,549,235,617,218.7C685.7,203,754,117,823,96C891.4,75,960,117,1029,154.7C1097.1,192,1166,224,1234,229.3C1302.9,235,1371,213,1406,202.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
 			<div class="about" id="about">
 				<section class="head">
 					<h1>Tentang Saya</h1>
 				</section>
 				<section class="content">
-					<img src="gambar/vector2.png">
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Quia, dolor libero labore maxime expedita, voluptatibus ipsum deleniti fugiat ipsa repellendus rerum saepe corrupti sunt sapiente repellat voluptas at? Libero, praesentium. Lorem ipsum dolor sit amet consectetur adipisicing, elit. Atque a omnis, repellat hic iusto excepturi inventore nostrum sunt, necessitatibus rem non, rerum nam. Quo non id, repellat cum perferendis esse officia a perspiciatis molestias et laudantium facilis accusantium voluptate distinctio natus quae iure itaque, explicabo ab saepe! Rem, in optio! Lorem ipsum dolor sit amet consectetur adipisicing, elit. Sed consectetur, quisquam, illum cumque molestiae doloremque aliquid accusamus veritatis magni consequatur assumenda, itaque? Magni nisi adipisci sed reprehenderit distinctio, eveniet suscipit alias provident nobis nemo reiciendis molestiae nulla est commodi autem rerum animi, ea voluptate earum eum veniam quasi perferendis ipsam! Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
+					<section class="content1">
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Quia, dolor libero labore maxime expedita, voluptatibus ipsum deleniti fugiat ipsa repellendus rerum saepe corrupti sunt sapiente repellat voluptas at? Libero, praesentium. Lorem ipsum dolor sit amet consectetur adipisicing, elit. Atque a omnis, repellat hic iusto excepturi inventore nostrum sunt, necessitatibus rem non, rerum nam. Quo non id, repellat cum perferendis esse officia a perspiciatis molestias et laudantium facilis accusantium voluptate distinctio natus quae iure itaque, explicabo ab saepe! Rem, in optio! Lorem ipsum dolor sit amet consectetur adipisicing, elit. Sed consectetur, quisquam, illum cumque molestiae doloremque aliquid accusamus veritatis magni consequatur assumenda, itaque? Magni nisi adipisci sed reprehenderit distinctio, eveniet suscipit alias provident nobis nemo reiciendis molestiae nulla est commodi autem rerum animi, ea voluptate earum eum veniam quasi perferendis ipsam! Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
+					</section>
+					<section class="content2">
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Quia, dolor libero labore maxime expedita, voluptatibus ipsum deleniti fugiat ipsa repellendus rerum saepe corrupti sunt sapiente repellat voluptas at? Libero, praesentium. Lorem ipsum dolor sit amet consectetur adipisicing, elit. Atque a omnis, repellat hic iusto excepturi inventore nostrum sunt, necessitatibus rem non, rerum nam. Quo non id, repellat cum perferendis esse officia a perspiciatis molestias et laudantium facilis accusantium voluptate distinctio natus quae iure itaque, explicabo ab saepe! Rem, in optio! Lorem ipsum dolor sit amet consectetur adipisicing, elit. Sed consectetur, quisquam, illum cumque molestiae doloremque aliquid accusamus veritatis magni consequatur assumenda, itaque? Magni nisi adipisci sed reprehenderit distinctio, eveniet suscipit alias provident nobis nemo reiciendis molestiae nulla est commodi autem rerum animi, ea voluptate earum eum veniam quasi perferendis ipsam! Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
+					</section>
 				</section>
 			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5cdb95" fill-opacity="1" d="M0,160L48,160C96,160,192,160,288,133.3C384,107,480,53,576,58.7C672,64,768,128,864,133.3C960,139,1056,85,1152,74.7C1248,64,1344,96,1392,112L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
 			<!-- About -->
 
+			<!-- Gallery -->
+			<div class="galeri">
+				<section class="head">
+					<h1>Galeri</h1>
+				</section>
+				<section class="galeri2">
+					<div class="gambar">
+						<img src="gambar/views.jpg">
+					</div>
+					<div class="gambar">
+						<img src="gambar/jumbo.jpg">
+					</div>
+					<div class="gambar">
+						<img src="gambar/views2.jpg">
+					</div>
+					<div class="gambar">
+						<img src="gambar/views3.jpg">
+					</div>
+					<div class="gambar">
+						<img src="gambar/views4.jpg">
+					</div>
+				</section>
+			</div>
+			<!-- Gallery -->
+
 			<!-- Contact -->
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5cdb95" fill-opacity="1" d="M0,192L34.3,186.7C68.6,181,137,171,206,160C274.3,149,343,139,411,160C480,181,549,235,617,218.7C685.7,203,754,117,823,96C891.4,75,960,117,1029,154.7C1097.1,192,1166,224,1234,229.3C1302.9,235,1371,213,1406,202.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
 			<div class="contact" id="contact">
 				<section class="head">
-					<h1>Contact Us</h1>
+					<h1>Hubungi Saya</h1>
 				</section>
 				<section class="form">
 					<form action="#" method="post">
@@ -65,14 +102,27 @@
 					</form>
 				</section>
 			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5cdb95" fill-opacity="1" d="M0,160L48,160C96,160,192,160,288,133.3C384,107,480,53,576,58.7C672,64,768,128,864,133.3C960,139,1056,85,1152,74.7C1248,64,1344,96,1392,112L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
 			<!-- Contact -->
+
+			<!-- Socmed -->
+			<div class="sosmed">
+				<div class="link">
+					<ul>
+						<li><a href="https://youtube.com/@zsec1337" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+						<li><a href="https://github.com/rizkypkg/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+						<li><a href="https://wa.me/+6285724817551" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- Socmed -->
 
 			<!-- Footer -->
 			<div class="footer">
-				<p>Copyright <i class="fa-sharp fa-solid fa-copyright"></i>2022 BY MOH.RIZKY<i class="fa-sharp fa-solid fa-fire"></i></p>
+				<p>Copyright <i class="fa-sharp fa-solid fa-copyright"></i>2023 BY MOH.RIZKY</p>
 			</div>
 			<!-- Footer -->
-
+			<script src="func.js"></script>
 		</div>
 	</body>
 </html>
