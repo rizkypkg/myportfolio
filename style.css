@@ -11,35 +11,44 @@ body {
 }
 
 .container {
-	width: 80%;
+	width: 100%;
 	height: 100%;
 	margin: 0 auto;
-	padding: 20px;
 	box-sizing: border-box;
+	border: 1px solid #000;
 }
 
 .container .nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 0px 80px;
+	background-color: #5cdb95;
 }
 
-.container .nav ul li {
-	display: inline;
-	margin: 0px 15px 0px 15px;
-	list-style-type: none;
+.container .nav .toggle-btn span {
+	background-color: #5cdb95;
+}
+
+.container .nav .menu ul li {
+	display: inline-block;
+	margin: 0px 5px 0px 5px;
+	list-style: none;
 }
 
 .container .nav ul li a {
 	text-decoration: none;
+	text-transform: uppercase;
 	font-size: 17px;
-	padding: 10px;
+	padding: 13px;
+	font-weight: bold;
+
 }
 
-.container .nav .menu1 li a:hover {
+.container .nav ul li a:hover {
 	background-color: #4F0341;
 	color: #fff;
-	padding: 10px;
+	padding: 13px;
 }
 
 .container .nav h3 {
@@ -47,27 +56,30 @@ body {
 	letter-spacing: 3px;
 }
 
-.container .nav ul li a i {
-	font-size: 25px;
+.container .nav .toggle-btn {
+	position: absolute;
+	top: 30px;
+	right: 2rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
 }
 
-.container .nav ul li a .fa-whatsapp {
-	color: #43d854;
-}
-
-.container .nav ul li a .fa-youtube {
-	color: 	#cd201f;
-}
-
-.container .nav ul li a .fa-github {
-	color: #00405d;
+.container .nav .toggle-btn .hamburger {
+	height: 3px;
+	width: 100%;
+	background-color: #000;
+	border-radius: 10px;
 }
 
 .container .main {
-	margin-top: 50px;
+	margin-top: 40px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 0px 80px;
 }
 
 .container .main section {
@@ -85,8 +97,9 @@ body {
 	margin-top: 15px;
 	text-decoration: none;
 	padding: 15px;
-	background-color: #4F0341;
+	background-color: #5cdb95;
 	color: #fff;
+	border-radius: 20px;
 }
 
 .container .main .kanan {
@@ -94,13 +107,15 @@ body {
 }
 
 .container .main .kanan img {
-	width: 400px;
+	width: 370px;
 }
 
 .container .about {
-	margin-top: 200px;
+	margin-top: -30px;
 	width: 100%;
 	height: 100%;
+	padding: 0px 80px;
+	background-color: #5cdb95;
 }
 
 .container .about .head h1 {
@@ -111,6 +126,19 @@ body {
 
 .container .about .content {
 	display: flex;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
+.container .about .content1 {
+	width: 50%;
+	margin: 0px 80px 0px 0px;
+}
+
+.container .about .content2 {
+	width: 50%;
 }
 
 .container .about .content img {
@@ -123,11 +151,43 @@ body {
 	text-align: justify;
 }
 
-.container .contact {
-	text-transform: uppercase;
-	margin-top: 100px;
+.container .galeri {
 	width: 100%;
 	height: 100%;
+	padding: 0px 80px;
+	margin: 0 auto;
+}
+
+.container .galeri .galeri2 {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.container .galeri .galeri2 .gambar {
+	margin: 5px 5px;
+	width: 250px;
+	height: 200px;
+}
+
+.container .galeri .galeri2 .gambar img {
+	width: 100%;
+	height: 100%;
+}
+
+.container .galeri .head h1 {
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.container .contact {
+	background-color: #5cdb95;
+	text-transform: uppercase;
+	margin-top: -30px;
+	width: 100%;
+	height: 100%;
+	padding: 0px 80px;
 }
 
 .container .contact .head h1 {
@@ -168,7 +228,147 @@ body {
 	width: 100px;
 }
 
+.container .sosmed {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+.container .sosmed .link ul {
+	list-style-type: none;
+	padding: 0px 20px;
+}
+
+.container .sosmed .link ul li {
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.container .sosmed .link ul li a {
+	text-decoration: none;
+}
+
+.container .sosmed .link ul li a i {
+	font-size: 50px;
+}
+
+.container .sosmed .link ul li a .fa-whatsapp {
+	color: #43d854;
+}
+
+.container .sosmed .link ul li a .fa-youtube {
+	color: #cd201f;
+}
+
+.container .sosmed .link ul li a .fa-github {
+	color: #00405d;
+}
+
 .container .footer {
 	margin-top: 100px;
 	text-align: center;
+}
+
+@media (max-width: 600px) {
+
+	.container .nav,
+	.container .main,
+	.container .about,
+	.container .galeri,
+	.container .contact {
+		padding: 0px 30px;
+		width: 100%;
+	}
+
+	.container {
+		padding: 0px 0px;
+	}
+
+
+	.container .nav {
+		flex-direction: column;
+		align-items: flex-start;
+		background-color: #5cdb95;
+	}
+
+	.container .nav .toggle-btn {
+		display: flex;
+		align-items: center;
+	}
+
+	.container .nav .menu {
+		background-color: #5cdb95;
+		display: none;
+		width: 100%;
+	}
+
+	.container .nav .menu.active {
+		display: flex;
+	}
+
+	.container .nav .menu ul li {
+		flex-direction: column;
+		margin: 15px auto;
+		width: 100%;
+		text-align: left;
+	}
+
+	.container .nav .menu ul li a {
+		width: 100%;
+		font-size: 15px;
+		font-weight: bold;
+		padding: 0px;
+	}
+
+	.container .nav .menu ul li a:hover {
+		background-color: #5cdb95;
+	}
+
+	.container .main {
+		margin-top: 50px;
+		margin-bottom: 80px;
+	}
+
+	.container .main .kiri {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.container .main .kanan {
+		display: none;
+	}
+
+	.container .about .content1 {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.container .about .content2 {
+		display: none;
+	}
+
+	.container .galeri {
+		margin-bottom: 80px;
+	}
+
+	.container .galeri .galeri2 {
+		width: 100%;
+	}
+
+	.container .galeri .galeri2 .gambar {
+		width: 100%;
+		height: 100%;
+	}
+
+	.container .contact section:last-of-type {
+		padding-bottom: 25px;
+	}
+
+	.container .contact .form input,
+	.container .contact .form textarea {
+		width: 100%;
+	}
 }
